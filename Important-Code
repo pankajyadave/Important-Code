@@ -1,0 +1,3 @@
+*****scroll down in selenium different ways*****
+import org.openqa.selenium.JavascriptExecutor;
+((JavascriptExecutor)driver).executeScript("scroll(0,500)");
