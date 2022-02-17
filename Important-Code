@@ -5,3 +5,6 @@ import org.openqa.selenium.JavascriptExecutor;
 *****Uses of getAttribute()*****
 driver.findElement(By.tagName("source")).getAttribute("src");
 //output:- https://dnavideo.s3.ap-south-1.amazonaws.com/squre.mp4
+
+*****Send Value through different ways *****
+
