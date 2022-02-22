@@ -2,11 +2,17 @@
 import org.openqa.selenium.JavascriptExecutor;
 ((JavascriptExecutor)driver).executeScript("scroll(0,500)");
 
-*****Uses of getAttribute()*****
+*********************************Uses of getAttribute()**************************************************
 driver.findElement(By.tagName("source")).getAttribute("src");
 //output:- https://dnavideo.s3.ap-south-1.amazonaws.com/squre.mp4
 
-*****Send Value through different ways *****
+*****Send Value through different ways *********************************************************************
+
+JavascriptExecutor JS = (JavascriptExecutor)webdriver;
+	// Enter username
+JS.executeScript("document.getElementById('User').value='Abha_Rathour'");
+	// Enter password
+JS.executeScript("document.getElementById('Password').value='password123'");
 
 ********************** To handle all new opened window	   ***************************************
         Set<String> s1=driver.getWindowHandles();		
