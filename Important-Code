@@ -2,10 +2,12 @@
 import org.openqa.selenium.JavascriptExecutor;
 ((JavascriptExecutor)driver).executeScript("scroll(0,500)");
 
+======================================================================================================================================
 *********************************Uses of getAttribute()**************************************************
 driver.findElement(By.tagName("source")).getAttribute("src");
 //output:- https://dnavideo.s3.ap-south-1.amazonaws.com/squre.mp4
 
+===========================================================================================================================
 *****Send Value through different ways *********************************************************************
 
 JavascriptExecutor JS = (JavascriptExecutor)webdriver;
@@ -14,6 +16,7 @@ JS.executeScript("document.getElementById('User').value='Abha_Rathour'");
 	// Enter password
 JS.executeScript("document.getElementById('Password').value='password123'");
 
+================================================================================================================================
 ********************** To handle all new opened window	   ***************************************
         Set<String> s1=driver.getWindowHandles();		
         Iterator<String> i1=s1.iterator();		
@@ -39,5 +42,7 @@ JS.executeScript("document.getElementById('Password').value='password123'");
             }		
         }		
         // Switching to Parent window i.e Main Window.
-            driver.switchTo().window(MainWindow);		
+            driver.switchTo().window(MainWindow);	
+======================================================================================================================================
+
 
